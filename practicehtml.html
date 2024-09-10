@@ -192,7 +192,7 @@
             </section>
             <article id="cntme">
                 <h5>Contact Me</h5>
-                <p>Please fill your query</p>
+                <p>Please fill the below Details</p>
                 <form action="https://httpbin.org/get",method="get">
                     <p>
                         <label for="firstName">First Name</label>
@@ -203,8 +203,44 @@
                         <input type="text" name="lastName" id="lastName" placeholder="Enter your last name" autocomplete="on" autofocus required>
                     </p>
                     <p>
+                        <label for="mobileNumber">Mobile Number</label>
+                        <input type="tel" name="mobileNumber" id="mobileNumber" placeholder="10 digit mobile number" autocomplete="on" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}">
+                    </p>
+                    <p>
+                        <label for="decade">Fav Decade</label>
+                        <input type="number" name="decade" id="decade" min="1780" max="2020" value="2000" step="10">
+                    </p>
+                    <p>
                         <label for="passWord">Password</label>
                         <input type="password" name="passWord" id="passWord" placeholder="Minimum 8 characters" required>
+                    </p>
+                    <p>
+                        <label for="language">Fav Language</label>
+                        <select name="content" id="content" multiple size="5"> 
+                            <optgroup label="Evergreen">
+                            <option value="Java" >Java</option>
+                            <option value="C">C</option>
+                            <option value="C#" selected>C#</option>
+                            <option value="python">python</option>
+                            <option value="C++">C++</option>
+                        </optgroup>
+                        <optgroup label="Emerging">
+                            <option value="Golang">Golang</option>
+                            <option value="Ruby">Ruby</option>
+                            <option value="Embedded C">Embedded C</option>
+                        </optgroup>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="college">Your College</label>
+                        <input type="text" name="college" id="college" list="college-list">
+                        <datalist id="college-list">
+                            <option value="TCE">Thiagarajar college of engineering </option>
+                            <option value="pu">Presidency University</option>
+                            <option value="au">Anna University</option>
+                            <option value="ssn">S Siva Nadar</option>
+                            <option value="mec">Mepco engineering college</option>
+                        </datalist>
                     </p>
                 </form>
             </article>
