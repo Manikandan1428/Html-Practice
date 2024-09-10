@@ -12,3 +12,7 @@ table tr,th,td,caption{
     border-collapse: collapse;
     padding: 0.5rem;
 }
+address {
+    font-size: 12px;
+    padding-left: 40px;
+}
