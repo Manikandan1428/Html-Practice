@@ -193,7 +193,7 @@
             <article id="cntme">
                 <h5>Contact Me</h5>
                 <p>Please fill the below Details</p>
-                <form action="https://httpbin.org/get",method="get">
+                <form action="https://httpbin.org/get" method="get">
                     <fieldset>
                         <legend>Customer Details</legend>
                         <p>
@@ -206,7 +206,7 @@
                         </p>
                         <p>
                             <label for="mobileNumber">Mobile Number</label>
-                            <input type="tel" name="mobileNumber" id="mobileNumber" placeholder="10 digit mobile number" autocomplete="on" required pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}">
+                            <input type="tel" name="mobileNumber" id="mobileNumber" placeholder="10 digit mobile number" autocomplete="on" required pattern="[0-9]{3}[0-9]{4}[0-9]{3}">
                         </p>
                         <p>
                             <label for="decade">Fav Decade</label>
@@ -218,7 +218,7 @@
                         </p>
                         <p>
                             <label for="language">Fav Language</label>
-                            <select name="content" id="content" multiple size="5"> 
+                            <select name="content" id="language" multiple size="5"> 
                                 <optgroup label="Evergreen">
                                 <option value="Java" >Java</option>
                                 <option value="C">C</option>
@@ -292,7 +292,8 @@
                         </p>
                     </fieldset>
                     <button type="submit">Submit</button>
-                    <button type="reset">Reset</button>
+                    <button type="reset" >Reset</button>
+                    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
                     
                 </form>
             </article>
